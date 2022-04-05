@@ -15,5 +15,8 @@ BankAccount.prototype.deposit = function(amount) {
 BankAccount.prototype.withdraw = function(amount) {
   if (amount < 0) {
     return false;
+  } else {
+    this.balance -= amount;
+    return true;
   }
 }
