@@ -1,3 +1,11 @@
+Describe: createAccount()
+
+Test: "If given an empty string for name it should return false"
+Code: createAccount("", 100);
+Expected-Output: false
+
+
+
 Describe: deposit()
 
 Test: "If given a negative number it should return false"
