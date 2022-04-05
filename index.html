@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+<head>
+  <script src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
+  <script src='js/scripts.js'></script>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css' integrity='sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn' crossorigin='anonymous'>
+  <link rel='stylesheet' href='css/styles.css' type='text/css'>
+  <title>Bank Account</title>
+</head>
+<body>
+  <h1 class="display-1 text-center">Bank Inc.</h1>
+  <div class="row">
+    <div class="col-6">
+      <form id="create">
+        <h4>New Account</h4>
+        <label>Enter Name:</label>
+        <input type="text" id="name" class="form-control">
+        <label>Enter Initial Deposit:</label>
+        <input type="text" id="intial-deposit" class="form-control">
+        <button class="btn btn-primary" type="submit" id="create-account">Create</button>
+      </form>
+    </div>
+    <div class="col-6">
+      <form id="deposit-form">
+        <h4>Deposit/Withdraw</h4>
+        <label>Deposit</label>
+        <input type="number" id="deposit" class="form-control">
+        <button type="submit" class="btn btn-success" id="deposit-btn">Deposit</button>
+      </form>
+      <form id="withdraw-form">
+        <label>Withdraw</label>
+        <input type="number" id="withdraw" class="form-control">
+        <button type="submit" class="btn btn-danger" id="withdraw-btn">Withdraw</button>
+      </form>
+    </div>
+  </div>
+  <h3>Current Balance: <span id="balance"></span></h3>
+</body>
+</html>
